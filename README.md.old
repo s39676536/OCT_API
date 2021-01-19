@@ -1,0 +1,43 @@
+# Introduction
+
+This sub-folder contains the code to host a web frontend to demostrate the AMD DETECTION function.
+
+
+# Packages to be installed
+
+Below packages are required (in additional to the packages used in the amd detection project) to run this demo.
+
+1. Flask
+2. Flask-Uploads
+
+Please run below commands to install the required packages.
+
+```
+cd webdemo
+webdemo> pip install -r requirements.txt
+```
+
+
+# Command to start the apps for testing
+
+Windows:
+```
+webdemo> set FLASK_ENV=development
+webdemo> set FLASK_APP=main.py
+webdemo> flask run
+ * Serving Flask app "main"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+BTW, it will download the base weights file at first time the program running
+```
+webdemo> flask run
+Downloading: "https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth" to C:\Users\dennis/.torch\models\inception_v3_google-1a9a5a14.pth
+```
+
+# Before go live
+
+1. Change the upload file path
+2. remove development
+
+
