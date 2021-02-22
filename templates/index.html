@@ -1,4 +1,4 @@
 {% if upload_filename is defined %}
-	<img src="https://{{ request.host }}/uploads/img/{{ heatmap_filename }}" style="width: 820px;" /><br>
+	<img src="{{ request.host_url }}uploads/img/{{ heatmap_filename }}" style="width: 820px;" /><br>
 	{{ upload_class }} with {{ '%0.2f'|format(upload_prob|float) }}% confidence (Elapsed {{ elapsed_ms }} ms)
 {% endif %}
